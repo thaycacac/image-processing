@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# MATLAB
+*.asv
+*.m~
+*.mex*
+slprj/
+matlab/chap04/output/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
+
+final-project/.venv
