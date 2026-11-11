@@ -1,7 +1,7 @@
 %% LAB 3 - CHUYEN DOI KIEU DU LIEU ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 
 % double(I) chi doi kieu nen gia tri van gan mien 0..255.
 Icast = double(I);

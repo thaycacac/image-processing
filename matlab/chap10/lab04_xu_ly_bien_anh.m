@@ -1,7 +1,7 @@
 %% LAB 4 - CAC QUY TAC XU LY BIEN ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 H = fspecial('average',[5 5]);
 
 % Cung kernel, nhung cach padding khac nhau tao ket qua bien khac nhau.

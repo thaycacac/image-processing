@@ -1,7 +1,7 @@
 %% LAB 6 - DANG KY ANH BANG UOC LUONG TINH TIEN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-fixed = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+fixed = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Tao anh moving lech biet truoc: x sang phai 12 pixel, y xuong 8 pixel.
 moving = imtranslate(fixed,[12 8],'OutputView','same');

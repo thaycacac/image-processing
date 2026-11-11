@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 3 - CHUYEN DOI KIEU DU LIEU ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 Icast = double(I); Id = im2double(I); Iback = im2uint8(Id);
 fprintf('double(I) range: [%g,%g]\n', min(Icast(:)), max(Icast(:)));
 fprintf('im2double(I) range: [%g,%g]\n', min(Id(:)), max(Id(:)));

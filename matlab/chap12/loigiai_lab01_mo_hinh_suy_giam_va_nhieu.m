@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 1 - SUY GIAM VA NHIEU
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 B=imfilter(I,fspecial('gaussian',[9 9],1.5),'replicate');
 G=imnoise(I,'gaussian',0,.01); S=imnoise(I,'salt & pepper',.04);
 U=min(max(I+.12*(rand(size(I))-.5),0),1);

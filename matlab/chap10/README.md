@@ -23,4 +23,4 @@ Xử lý lân cận tạo pixel đầu ra từ một vùng pixel xung quanh vị
 6. `lab06_unsharp_highboost.m` — unsharp mask và high-boost.
 7. `lab07_loc_trong_roi.m` — lọc ảnh chỉ trong ROI bằng mask.
 
-Mỗi lab có file lời giải tương ứng. Ảnh xám mẫu là `Practice/lenna.tif`; script tự tìm đường dẫn. Các bài cần Image Processing Toolbox.
+Mỗi lab có file lời giải tương ứng. Ảnh xám mẫu là `matlab/data/lenna.tif`; script tự tìm đường dẫn. Các bài cần Image Processing Toolbox.

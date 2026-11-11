@@ -1,7 +1,7 @@
 %% LAB 4 - BIEN DOI AFFINE
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 outView = imref2d(size(I(:,:,1)));
 
 % affine2d dung ma tran chuyen doi theo quy uoc toa do hang-vector cua MATLAB.

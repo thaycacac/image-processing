@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 5 - BAC BUTTERWORTH
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 [M,N]=size(I); [u,v]=meshgrid(1:N,1:M); D=sqrt((u-(floor(N/2)+1)).^2+(v-(floor(M/2)+1)).^2);
 F=fftshift(fft2(I)); ns=[1 2 5]; figure;
 for k=1:3

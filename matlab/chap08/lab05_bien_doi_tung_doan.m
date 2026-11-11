@@ -1,7 +1,7 @@
 %% LAB 5 - CONTRAST STRETCHING VA GRAY-LEVEL SLICING
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Piecewise-linear stretch: giu vung toi toi, gian vung trung gian, nen vung sang.
 r1 = 0.25; r2 = 0.75; s1 = 0.10; s2 = 0.90;

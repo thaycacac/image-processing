@@ -2,7 +2,7 @@
 clear; close all; clc;
 % Mo hinh: nguon sang -> vat the -> ong kinh -> cam bien -> so hoa.
 scriptDir = fileparts(mfilename('fullpath'));
-imageFile = fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png');
+imageFile = fullfile(scriptDir, '..', 'data', 'statue.png');
 I = imread(imageFile);
 fprintf('Anh statue.png co size %s, kieu %s.\n', mat2str(size(I)), class(I));
 fprintf('Day la anh phan xa: camera ghi nhan anh sang phan xa tu vat duoc chieu sang.\n');

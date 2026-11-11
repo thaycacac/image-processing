@@ -1,7 +1,7 @@
 %% LAB 3 - SO SANH IDEAL, BUTTERWORTH VA GAUSSIAN LPF
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 [M,N] = size(I); [U,V] = meshgrid(1:N,1:M);
 centerX = floor(N/2)+1; centerY = floor(M/2)+1;
 D = sqrt((U-centerX).^2 + (V-centerY).^2);

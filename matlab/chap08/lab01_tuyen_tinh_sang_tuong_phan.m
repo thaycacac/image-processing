@@ -1,7 +1,7 @@
 %% LAB 1 - BIEN DOI TUYEN TINH: DO SANG VA TUONG PHAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % s = c*r + b; c > 1 tang tuong phan, b > 0 tang do sang.
 c = 1.4; b = 0.08;

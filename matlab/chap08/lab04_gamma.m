@@ -1,7 +1,7 @@
 %% LAB 4 - BIEN DOI LUY THUA (GAMMA)
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 gammas = [0.5 1 2];
 figure('Name','Lab 4 - Gamma');
 for k = 1:numel(gammas)

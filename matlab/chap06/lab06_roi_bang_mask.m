@@ -1,7 +1,7 @@
 %% LAB 6 - CHON ROI VA XU LY RIENG VUNG ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 [rows,cols] = size(I);
 [x,y] = meshgrid(1:cols,1:rows);
 

@@ -1,7 +1,7 @@
 %% LAB 3 - XOAY ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 
 % imrotate xoay nguoc chieu kim dong ho; mac dinh mo rong khung de giu toan anh.
 I30 = imrotate(I,30,'bilinear','loose');

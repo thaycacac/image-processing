@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 4 - BIEN DOI AFFINE
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=imread(fullfile(scriptDir,'..','..','..','Practice','statue.png'));
+I=imread(fullfile(scriptDir,'..','data','statue.png'));
 R=imref2d(size(I(:,:,1)));
 T1=affine2d([1 0 0;0 1 0;45 25 1]);
 T2=affine2d([1.25 0 0;0 1.25 0;0 0 1]);

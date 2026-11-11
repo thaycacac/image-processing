@@ -1,7 +1,7 @@
 %% LAB 6 - REGULARIZED VA LUCY-RICHARDSON
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 psf = fspecial('gaussian',[9 9],1.5);
 blurred = imfilter(I,psf,'conv','symmetric');
 

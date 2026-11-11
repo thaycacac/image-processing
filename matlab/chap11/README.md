@@ -21,4 +21,4 @@ Biến đổi Fourier biểu diễn ảnh như tổng các thành phần tần s
 4. `lab04_hpf_va_high_frequency_emphasis.m` — HPF và high-frequency emphasis.
 5. `lab05_cutoff_va_bac_butterworth.m` — ảnh hưởng cutoff và bậc lọc.
 
-Mỗi lab có file lời giải tham khảo. Ảnh mẫu `Practice/lenna.tif` được tìm theo vị trí script. Ví dụ dùng FFT có sẵn trong MATLAB; hiển thị ảnh dùng Image Processing Toolbox.
+Mỗi lab có file lời giải tham khảo. Ảnh mẫu `matlab/data/lenna.tif` được tìm theo vị trí script. Ví dụ dùng FFT có sẵn trong MATLAB; hiển thị ảnh dùng Image Processing Toolbox.

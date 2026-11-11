@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 1 - RESIZE VA NOI SUY
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 methods = {'nearest','bilinear','bicubic'};
 figure('Name','Interpolation comparison'); imshow(I); title('Original');
 for k=1:3

@@ -1,7 +1,7 @@
 %% LAB 2 - CAT VUNG VA LAT ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 
 % imcrop nhan [x y width height], trong do x la cot, y la hang.
 cropRect = [80 90 300 300];

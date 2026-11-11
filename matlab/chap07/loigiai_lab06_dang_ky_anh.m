@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 6 - DANG KY ANH
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-fixed=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+fixed=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 moving=imtranslate(fixed,[12 8],'OutputView','same');
 tform=imregcorr(moving,fixed,'translation');
 registered=imwarp(moving,tform,'OutputView',imref2d(size(fixed)));

@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 3 - CAN BANG HISTOGRAM
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif'));
+I=imread(fullfile(scriptDir,'..','data','lenna.tif'));
 h=imhist(I,256); cdf=cumsum(h)/numel(I);
 map=uint8(round(255*cdf)); J=reshape(map(double(I)+1),size(I));
 figure; subplot(2,2,1); imshow(I); title('Original');

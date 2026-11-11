@@ -22,4 +22,4 @@ Biến đổi mức xám là phép biến đổi điểm: giá trị đầu ra t
 5. `lab05_bien_doi_tung_doan.m` — contrast stretching và gray-level slicing.
 6. `lab06_tang_tuong_phan_tu_dong.m` — `stretchlim`, `imadjust` và giới hạn hiển thị.
 
-Mỗi lab có file `loigiai_lab...m` tham khảo. Script dùng ảnh xám `Practice/lenna.tif` và tự tìm đường dẫn. Mở file lab trong MATLAB rồi nhấn **Run**.
+Mỗi lab có file `loigiai_lab...m` tham khảo. Script dùng ảnh xám `matlab/data/lenna.tif` và tự tìm đường dẫn. Mở file lab trong MATLAB rồi nhấn **Run**.

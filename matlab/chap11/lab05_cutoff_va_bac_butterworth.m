@@ -1,7 +1,7 @@
 %% LAB 5 - ANH HUONG CUTOFF VA BAC BUTTERWORTH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 [M,N] = size(I); [U,V] = meshgrid(1:N,1:M);
 D = sqrt((U-(floor(N/2)+1)).^2 + (V-(floor(M/2)+1)).^2);
 Fc = fftshift(fft2(I));

@@ -1,7 +1,7 @@
 %% LAB 6 - HISTOGRAM SLIDING, STRETCHING VA SHRINKING
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Sliding: cong offset lam sang hon, cat ve mien [0,1] khi vuot nguong.
 offset = 0.20;

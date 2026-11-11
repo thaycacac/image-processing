@@ -1,7 +1,7 @@
 %% LAB 5 - WARP PHI TUYEN DANG RIPPLE (INVERSE MAPPING)
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(rgb2gray(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'))));
+I = im2double(rgb2gray(imread(fullfile(scriptDir, '..', 'data', 'statue.png'))));
 [rows,cols] = size(I);
 [X,Y] = meshgrid(1:cols,1:rows);
 

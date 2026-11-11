@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 5 - LAPLACIAN VA EMBOSS
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 H=[0 -1 0;-1 4 -1;0 -1 0]; L=imfilter(I,H,'replicate');
 J=min(max(I+.6*L,0),1);
 E=imfilter(I,[-2 -1 0;-1 1 1;0 1 2],'replicate');

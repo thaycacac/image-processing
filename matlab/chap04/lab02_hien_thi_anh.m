@@ -1,7 +1,7 @@
 %% LAB 2 - CAC CACH HIEN THI ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 % lenna.tif da la anh xam 1 kenh; rgb2gray chi dung cho anh RGB.
 if size(I,3) == 3, Igray = rgb2gray(I); else, Igray = I; end
 

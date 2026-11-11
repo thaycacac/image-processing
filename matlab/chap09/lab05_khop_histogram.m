@@ -1,8 +1,8 @@
 %% LAB 5 - KHOP HISTOGRAM VOI ANH THAM CHIEU
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-source = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
-reference = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'mri.jpg'));
+source = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
+reference = imread(fullfile(scriptDir, '..', 'data', 'mri.jpg'));
 
 % Tao histogram muc tieu tu anh reference, sau do histeq map anh source.
 targetHistogram = imhist(reference,256);

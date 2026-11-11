@@ -1,7 +1,7 @@
 %% LAB 1 - DOC THONG TIN VA NAP ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-imageFile = fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif');
+imageFile = fullfile(scriptDir, '..', 'data', 'lenna.tif');
 
 % imfinfo doc metadata ma chua can nap cac pixel vao workspace.
 info = imfinfo(imageFile);

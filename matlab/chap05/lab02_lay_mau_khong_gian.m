@@ -1,7 +1,7 @@
 %% LAB 2 - LAY MAU KHONG GIAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 Igray = im2double(rgb2gray(I));
 % Lay moi pixel thu 2, 4, 8 theo hai truc lam giam so mau khong gian.
 I2 = Igray(1:2:end, 1:2:end);

@@ -20,4 +20,4 @@ Khôi phục ảnh tìm cách ước lượng ảnh gốc từ ảnh đã suy gi
 5. `lab05_khu_nhoe_wiener.m` — khử nhòe có nhiễu bằng Wiener filter.
 6. `lab06_deblur_regularized_lucy.m` — so sánh regularized và Lucy–Richardson.
 
-Mỗi lab có file lời giải tham khảo. Ảnh mẫu `Practice/lenna.tif` được dựng đường dẫn theo vị trí script. Các hàm phục hồi cần Image Processing Toolbox.
+Mỗi lab có file lời giải tham khảo. Ảnh mẫu `matlab/data/lenna.tif` được dựng đường dẫn theo vị trí script. Các hàm phục hồi cần Image Processing Toolbox.

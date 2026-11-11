@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 6 - RGB VA HSV
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'statue.png')));
 HSV = rgb2hsv(I);
 figure; subplot(2,2,1); imshow(I); title('RGB');
 subplot(2,2,2); imshow(HSV(:,:,1),[]); title('Hue');

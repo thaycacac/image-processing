@@ -1,7 +1,7 @@
 %% LAB 5 - KHAO SAT PIXEL VA PROFILE
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 if size(I,3) == 3, Igray = rgb2gray(I); else, Igray = I; end
 
 % Chi so MATLAB la (row,column); toa do do hoa (x,y)=(cot,hang).

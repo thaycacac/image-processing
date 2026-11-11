@@ -1,7 +1,7 @@
 %% LAB 3 - CAN BANG HISTOGRAM QUA CDF
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 
 % Tinh histogram 256 muc, chuan hoa thanh xac suat va tinh CDF.
 h = imhist(I,256);

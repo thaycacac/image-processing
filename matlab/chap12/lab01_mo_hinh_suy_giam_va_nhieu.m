@@ -1,7 +1,7 @@
 %% LAB 1 - MO HINH SUY GIAM VA CAC LOAI NHIEU
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Tao blur bang PSF Gaussian, sau do cong nhieu Gaussian: g = h*f + n.
 psf = fspecial('gaussian',[9 9],1.5);

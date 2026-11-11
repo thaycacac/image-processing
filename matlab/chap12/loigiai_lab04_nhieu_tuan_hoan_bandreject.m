@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 4 - BANDREJECT
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 [M,N]=size(I); [x,~]=meshgrid(0:N-1,0:M-1);
 In=min(max(I+.15*cos(2*pi*24*x/N),0),1); F=fftshift(fft2(In));
 [u,v]=meshgrid(1:N,1:M); D=sqrt((u-(floor(N/2)+1)).^2+(v-(floor(M/2)+1)).^2);

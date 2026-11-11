@@ -1,7 +1,7 @@
 %% LAB 5 - KET HOP LAY MAU VA LUONG TU HOA
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 % Giam mau roi phong lai nearest: kich thuoc ve nhu cu nhung thong tin da mat.
 Isampled = I(1:4:end,1:4:end);
 Ispatial = imresize(Isampled,size(I),'nearest');

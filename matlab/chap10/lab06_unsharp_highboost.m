@@ -1,7 +1,7 @@
 %% LAB 6 - UNSHARP MASKING VA HIGH-BOOST
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 blur = imfilter(I,fspecial('gaussian',[9 9],1.5),'replicate');
 detail = I - blur;                 % Chi tiet cao tan so tu anh goc tru anh mo.

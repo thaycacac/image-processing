@@ -1,7 +1,7 @@
 %% LAB 1 - FFT 2D VA PHO TAN SO
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % FFT 2D chuyen anh tu mien khong gian sang mien tan so.
 F = fft2(I);

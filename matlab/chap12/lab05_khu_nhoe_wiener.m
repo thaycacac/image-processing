@@ -1,7 +1,7 @@
 %% LAB 5 - KHU NHOE BANG WIENER FILTER
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Tao nhieu motion blur voi PSF da biet, dung boundary circular de mo hinh don gian.
 psf = fspecial('motion',15,20);

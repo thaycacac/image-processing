@@ -1,7 +1,7 @@
 %% LAB 6 - TANG TUONG PHAN TU DONG
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-Ioriginal = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+Ioriginal = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 % Tao anh co tuong phan thap va hai pixel ngoai le de thay tac dung robust stretch.
 I = 0.30 + 0.35 * Ioriginal;
 I(1,1) = 0; I(end,end) = 1;

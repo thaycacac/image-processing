@@ -1,7 +1,7 @@
 %% LAB 6 - GHI ANH VA KIEM TRA LAI
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-imageFile = fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif');
+imageFile = fullfile(scriptDir, '..', 'data', 'lenna.tif');
 I = imread(imageFile);
 if size(I,3) == 3, Igray = rgb2gray(I); else, Igray = I; end
 

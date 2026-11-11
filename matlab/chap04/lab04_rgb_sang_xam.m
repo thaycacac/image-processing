@@ -2,7 +2,7 @@
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
 % Chon statue.png vi day la anh mau RGB trong bo du lieu thuc hanh.
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 
 % Anh RGB co ba mat phang: do, luc, lam.
 R = I(:,:,1); G = I(:,:,2); B = I(:,:,3);

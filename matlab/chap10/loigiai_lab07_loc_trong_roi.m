@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 7 - LOC ROI
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 [r,c]=size(I); [x,y]=meshgrid(1:c,1:r);
 BW=((x-c/2)/(c*.28)).^2+((y-r/2)/(r*.35)).^2<=1;
 H=fspecial('gaussian',[9 9],1.5); J=roifilt2(H,I,BW);

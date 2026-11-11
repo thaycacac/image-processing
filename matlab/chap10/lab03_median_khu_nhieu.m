@@ -1,7 +1,7 @@
 %% LAB 3 - MEDIAN FILTER KHU NHIEU MUOI TIEU
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Them nhieu muoi tieu voi mat do 5%.
 Inoise = imnoise(I,'salt & pepper',0.05);

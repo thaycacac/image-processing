@@ -40,4 +40,4 @@ Chương này giải thích ảnh hình thành và được cảm biến thu nh�
 5. `lab05_ket_hop_lay_mau_luong_tu.m` — thay đổi đồng thời độ phân giải không gian và mức xám.
 6. `lab06_rgb_hsv_va_cac_kenh.m` — xem RGB/HSV, brightness, hue và saturation.
 
-Mỗi lab có file `loigiai_lab...m` tham khảo. `uniform_quantize.m` là hàm lượng tử hóa dùng trong ví dụ. Mở file lab trong MATLAB rồi nhấn **Run**. Ảnh mẫu được đọc từ thư mục `Practice`; script tự tìm đường dẫn.
+Mỗi lab có file `loigiai_lab...m` tham khảo. `uniform_quantize.m` là hàm lượng tử hóa dùng trong ví dụ. Mở file lab trong MATLAB rồi nhấn **Run**. Ảnh mẫu được đọc từ thư mục `matlab/data`; script tự tìm đường dẫn.

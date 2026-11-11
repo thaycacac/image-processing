@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 5 - WIENER DEBLUR
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 psf=fspecial('motion',15,20); B=imfilter(I,psf,'conv','circular');
 v=.0002; N=imnoise(B,'gaussian',0,v); J=deconvwnr(N,psf,v/var(I(:)));
 J=min(max(J,0),1);

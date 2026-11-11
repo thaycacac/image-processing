@@ -1,7 +1,7 @@
 %% LAB 5 - LAPLACIAN VA LOC DINH HUONG
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Laplacian 4-neighbor xap xi dao ham bac hai; kernel co tong bang 0.
 Hlap = [0 -1 0; -1 4 -1; 0 -1 0];

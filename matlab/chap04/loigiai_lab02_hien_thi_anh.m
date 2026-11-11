@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 2 - CAC CACH HIEN THI ANH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 if size(I,3) == 3, Igray = rgb2gray(I); else, Igray = I; end
 figure('Name','Cac cach hien thi');
 subplot(2,2,1); imshow(Igray); title('imshow');

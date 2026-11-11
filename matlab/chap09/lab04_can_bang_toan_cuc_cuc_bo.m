@@ -1,7 +1,7 @@
 %% LAB 4 - CAN BANG TOAN CUC VA CUC BO (CLAHE)
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 
 % histeq dung thong ke toan bo anh de tao mot phep anh xa chung.
 Jglobal = histeq(I);

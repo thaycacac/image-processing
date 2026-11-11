@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 3 - LOC KHONG GIAN
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 N=imnoise(I,'salt & pepper',.05); W=ones(3,3)/9; P=max(N,1e-3);
 A=imfilter(N,W,'symmetric'); G=exp(imfilter(log(P),W,'symmetric'));
 H=1./imfilter(1./P,W,'symmetric'); M=medfilt2(N,[3 3]);

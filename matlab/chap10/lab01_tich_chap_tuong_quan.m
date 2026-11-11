@@ -1,7 +1,7 @@
 %% LAB 1 - TICH CHAP VA TUONG QUAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Kernel khong doi xung de thay ro viec convolution lat kernel, correlation thi khong.
 H = [1 2 0; 0 -1 0; 0 0 -2];

@@ -1,7 +1,7 @@
 %% LAB 2 - LAM TRON BANG MEAN VA GAUSSIAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Mean filter tinh trung binh deu trong kernel 3x3.
 Hmean3 = fspecial('average',[3 3]);

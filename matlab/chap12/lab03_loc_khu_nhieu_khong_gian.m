@@ -1,7 +1,7 @@
 %% LAB 3 - CAC BO LOC KHONG GIAN KHU NHIEU
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 Inoise = imnoise(I,'salt & pepper',0.05);
 W = ones(3,3)/9;
 

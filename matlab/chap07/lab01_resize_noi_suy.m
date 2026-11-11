@@ -1,7 +1,7 @@
 %% LAB 1 - DOI KICH THUOC VA NOI SUY
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png'));
+I = imread(fullfile(scriptDir, '..', 'data', 'statue.png'));
 
 % Phong anh 2 lan voi ba quy tac noi suy.
 nearest = imresize(I,2,'nearest');

@@ -21,4 +21,4 @@ Histogram ảnh xám là phân bố tần suất của các mức xám. Đây l�
 5. `lab05_khop_histogram.m` — khớp phân bố với ảnh tham chiếu.
 6. `lab06_dich_keo_gian_thu_hep.m` — sliding, stretching và shrinking.
 
-Mỗi lab có file `loigiai_lab...m` tham khảo. Ảnh mẫu nằm trong `Practice`; script tự dựng đường dẫn. Mở file lab trong MATLAB rồi nhấn **Run**; cần Image Processing Toolbox.
+Mỗi lab có file `loigiai_lab...m` tham khảo. Ảnh mẫu nằm trong `matlab/data`; script tự dựng đường dẫn. Mở file lab trong MATLAB rồi nhấn **Run**; cần Image Processing Toolbox.

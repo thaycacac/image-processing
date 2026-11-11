@@ -1,7 +1,7 @@
 %% LOI GIAI LAB 6 - REGULARIZED VA LUCY-RICHARDSON
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=im2double(imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif')));
+I=im2double(imread(fullfile(scriptDir,'..','data','lenna.tif')));
 P=fspecial('gaussian',[9 9],1.5); B=imfilter(I,P,'conv','symmetric');
 R=deconvreg(B,P); L=deconvlucy(B,P,15);
 R=min(max(R,0),1); L=min(max(L,0),1);

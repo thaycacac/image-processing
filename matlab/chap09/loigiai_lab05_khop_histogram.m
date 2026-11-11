@@ -1,8 +1,8 @@
 %% LOI GIAI LAB 5 - HISTOGRAM MATCHING
 clear; close all; clc;
 scriptDir=fileparts(mfilename('fullpath'));
-I=imread(fullfile(scriptDir,'..','..','..','Practice','lenna.tif'));
-ref=imread(fullfile(scriptDir,'..','..','..','Practice','mri.jpg'));
+I=imread(fullfile(scriptDir,'..','data','lenna.tif'));
+ref=imread(fullfile(scriptDir,'..','data','mri.jpg'));
 J=histeq(I,imhist(ref,256));
 figure; subplot(2,3,1); imshow(I); title('Source');
 subplot(2,3,2); imshow(ref); title('Reference');

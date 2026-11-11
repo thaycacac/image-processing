@@ -1,7 +1,7 @@
 %% LAB 2 - DOC HIEU HISTOGRAM
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 Idark = 0.45 * I;
 Ibright = min(0.45 + 0.55*I,1);
 IlowContrast = 0.4 + 0.2*I;

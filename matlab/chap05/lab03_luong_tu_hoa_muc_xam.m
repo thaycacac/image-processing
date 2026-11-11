@@ -1,7 +1,7 @@
 %% LAB 3 - LUONG TU HOA MUC XAM
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 % So muc L quyet dinh so cuong do co the bieu dien.
 levels = [2 4 16 256]; figure('Name','Lab 3 - So muc xam');
 for k = 1:numel(levels)

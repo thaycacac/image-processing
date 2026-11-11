@@ -1,7 +1,7 @@
 %% LAB 3 - BIEN DOI LOG
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Log curve tang tuong doi cac muc toi, dong thoi nen cac muc sang.
 c = 20;

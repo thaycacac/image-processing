@@ -1,7 +1,7 @@
 %% LAB 2 - BIEN DOI NGUOC VA TINH CHAT DICH
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Bien doi nguoc phai tai tao lai anh goc (sai so chi do lam tron so).
 F = fft2(I);

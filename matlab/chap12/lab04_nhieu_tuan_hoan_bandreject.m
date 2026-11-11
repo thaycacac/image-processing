@@ -1,7 +1,7 @@
 %% LAB 4 - KHU NHIEU TUAN HOAN BANG BANDREJECT
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 [M,N] = size(I); [x,y] = meshgrid(0:N-1,0:M-1);
 
 % Tao nhiu cosinus tuan hoan 24 chu ky theo truc ngang.

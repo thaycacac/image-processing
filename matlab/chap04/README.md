@@ -1,6 +1,6 @@
 # Chương 4 — Image Processing Toolbox
 
-Chương này giới thiệu các thao tác MATLAB/Image Processing Toolbox để đọc thông tin ảnh, nạp ảnh, đổi kiểu dữ liệu, hiển thị, khảo sát pixel và ghi ảnh ra tệp. Các lab dùng ảnh mẫu `Practice/lenna.tif` (xám) và `Practice/statue.png` (RGB) trong thư mục môn học; mỗi script tự tìm ảnh từ vị trí của chính nó.
+Chương này giới thiệu các thao tác MATLAB/Image Processing Toolbox để đọc thông tin ảnh, nạp ảnh, đổi kiểu dữ liệu, hiển thị, khảo sát pixel và ghi ảnh ra tệp. Các lab dùng ảnh mẫu `matlab/data/lenna.tif` (xám) và `matlab/data/statue.png` (RGB) đã được đóng gói trong repo; mỗi script tự dựng đường dẫn tương đối.
 
 ## Kiến thức cần nhớ
 

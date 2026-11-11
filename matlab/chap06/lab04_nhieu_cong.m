@@ -1,7 +1,7 @@
 %% LAB 4 - CONG NHIEU GAUSSIAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'lenna.tif')));
 
 % Nhiu Gaussian co trung binh 0; sigma dieu khien do manh cua nhiu.
 sigma = 0.08;

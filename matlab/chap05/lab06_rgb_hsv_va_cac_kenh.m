@@ -1,7 +1,7 @@
 %% LAB 6 - MAU RGB, HSV VA CAC THANH PHAN
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = im2double(imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'statue.png')));
+I = im2double(imread(fullfile(scriptDir, '..', 'data', 'statue.png')));
 % HSV tach thong tin mau H, do bao hoa S va do sang V.
 HSV = rgb2hsv(I);
 H = HSV(:,:,1); S = HSV(:,:,2); V = HSV(:,:,3);

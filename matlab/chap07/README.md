@@ -21,4 +21,4 @@ Phép biến đổi hình học thay đổi vị trí các pixel và quan hệ k
 5. `lab05_warp_phi_tuyen_ripple.m` — inverse mapping phi tuyến và nội suy bằng `interp2`.
 6. `lab06_dang_ky_anh.m` — tạo ảnh lệch, ước lượng tịnh tiến và căn chỉnh bằng `imregcorr`.
 
-Mỗi lab có file `loigiai_lab...m` tham khảo. Script dùng ảnh mẫu ở thư mục `Practice` và tự tìm đường dẫn. Cần Image Processing Toolbox; các phép affine/đăng ký dùng API MATLAB tương đối mới (`affine2d`, `imwarp`, `imregcorr`).
+Mỗi lab có file `loigiai_lab...m` tham khảo. Script dùng ảnh mẫu ở thư mục `matlab/data` và tự tìm đường dẫn. Cần Image Processing Toolbox; các phép affine/đăng ký dùng API MATLAB tương đối mới (`affine2d`, `imwarp`, `imregcorr`).

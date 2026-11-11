@@ -1,7 +1,7 @@
 %% LAB 2 - ANH AM (NEGATIVE)
 clear; close all; clc;
 scriptDir = fileparts(mfilename('fullpath'));
-I = imread(fullfile(scriptDir, '..', '..', '..', 'Practice', 'lenna.tif'));
+I = imread(fullfile(scriptDir, '..', 'data', 'lenna.tif'));
 
 % imcomplement voi uint8 tinh 255-I; voi double [0,1] tinh 1-I.
 J = imcomplement(I);
